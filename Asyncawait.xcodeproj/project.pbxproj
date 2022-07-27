@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72C7A1EC289010E80080B208 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C7A1EA289010E80080B208 /* ImageCell.xib */; };
+		72C7A1ED289010E80080B208 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7A1EB289010E80080B208 /* ImageCell.swift */; };
+		72C7A1F1289011CF0080B208 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7A1F0289011CF0080B208 /* ViewModel.swift */; };
+		72C7A1F4289013800080B208 /* DoodleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7A1F3289013800080B208 /* DoodleRepository.swift */; };
+		72C7A1F7289013B40080B208 /* DoodleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7A1F6289013B40080B208 /* DoodleDTO.swift */; };
 		72EB58F82887B40400ED9955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB58F72887B40400ED9955 /* AppDelegate.swift */; };
 		72EB58FA2887B40400ED9955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB58F92887B40400ED9955 /* SceneDelegate.swift */; };
 		72EB58FC2887B40400ED9955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB58FB2887B40400ED9955 /* ViewController.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72C7A1EA289010E80080B208 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		72C7A1EB289010E80080B208 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		72C7A1F0289011CF0080B208 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		72C7A1F3289013800080B208 /* DoodleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleRepository.swift; sourceTree = "<group>"; };
+		72C7A1F6289013B40080B208 /* DoodleDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoodleDTO.swift; sourceTree = "<group>"; };
 		72EB58F42887B40400ED9955 /* Asyncawait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asyncawait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EB58F72887B40400ED9955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72EB58F92887B40400ED9955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +86,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72C7A1EE289011A00080B208 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				72EB58FB2887B40400ED9955 /* ViewController.swift */,
+				72EB58FD2887B40400ED9955 /* Main.storyboard */,
+				72C7A1EB289010E80080B208 /* ImageCell.swift */,
+				72C7A1EA289010E80080B208 /* ImageCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		72C7A1EF289011AC0080B208 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				72C7A1F0289011CF0080B208 /* ViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		72C7A1F2289013730080B208 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				72C7A1F3289013800080B208 /* DoodleRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		72C7A1F52890138C0080B208 /* enitty */ = {
+			isa = PBXGroup;
+			children = (
+				72C7A1F6289013B40080B208 /* DoodleDTO.swift */,
+			);
+			path = enitty;
+			sourceTree = "<group>";
+		};
 		72EB58EB2887B40400ED9955 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +144,12 @@
 		72EB58F62887B40400ED9955 /* Asyncawait */ = {
 			isa = PBXGroup;
 			children = (
+				72C7A1F52890138C0080B208 /* enitty */,
+				72C7A1F2289013730080B208 /* repository */,
+				72C7A1EF289011AC0080B208 /* viewmodel */,
+				72C7A1EE289011A00080B208 /* view */,
 				72EB58F72887B40400ED9955 /* AppDelegate.swift */,
 				72EB58F92887B40400ED9955 /* SceneDelegate.swift */,
-				72EB58FB2887B40400ED9955 /* ViewController.swift */,
-				72EB58FD2887B40400ED9955 /* Main.storyboard */,
 				72EB59002887B40700ED9955 /* Assets.xcassets */,
 				72EB59022887B40700ED9955 /* LaunchScreen.storyboard */,
 				72EB59052887B40700ED9955 /* Info.plist */,
@@ -232,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EB59042887B40700ED9955 /* LaunchScreen.storyboard in Resources */,
+				72C7A1EC289010E80080B208 /* ImageCell.xib in Resources */,
 				72EB59012887B40700ED9955 /* Assets.xcassets in Resources */,
 				72EB58FF2887B40400ED9955 /* Main.storyboard in Resources */,
 			);
@@ -258,7 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C7A1F7289013B40080B208 /* DoodleDTO.swift in Sources */,
+				72C7A1F4289013800080B208 /* DoodleRepository.swift in Sources */,
+				72C7A1F1289011CF0080B208 /* ViewModel.swift in Sources */,
 				72EB58FC2887B40400ED9955 /* ViewController.swift in Sources */,
+				72C7A1ED289010E80080B208 /* ImageCell.swift in Sources */,
 				72EB58F82887B40400ED9955 /* AppDelegate.swift in Sources */,
 				72EB58FA2887B40400ED9955 /* SceneDelegate.swift in Sources */,
 			);
